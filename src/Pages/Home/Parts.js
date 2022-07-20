@@ -28,7 +28,7 @@ const Parts = ({part}) => {
                 <span class="ml-auto text-gray-900">{minOrder}</span>
               </div>
               
-              <div class="flex ">
+              <div class="flex pt-4">
                 <span class="title-font font-medium text-2xl text-gray-900">
                 ${price}
                 </span>
