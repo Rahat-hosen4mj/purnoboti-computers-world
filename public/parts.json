@@ -9,15 +9,6 @@
        "img": "https://i.ibb.co/1qnhL7h/product1.jpg" 
     },
     {
-       "id":2,
-       "name": "Anti Interference GPU",
-       "price": 106,
-       "description": "Anti Interference GPU Extension Line Computer PCI-E X16 Vertically VGA Card Bracket Set Suit 7 Slot Mount PH-VGPUKT_02",
-       "avlQuantity": 1100,
-       "minOrder": 50,
-       "img": "https://i.ibb.co/VTgBmnk/product3.jpg" 
-    },
-    {
        "id":3,
        "name": "EXP GDC Notebook",
        "price": 90,

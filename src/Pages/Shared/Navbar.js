@@ -19,6 +19,9 @@ const Navbar = () => {
         <Link to="/">Home</Link>
       </li>
       <li>
+        <Link to='/purchage'>Purchage</Link>
+      </li>
+      <li>
         <Link to="/blog">Blog</Link>
       </li>
       <li>
@@ -42,7 +45,7 @@ const Navbar = () => {
                         {navItem}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Purnoboti World</a>
+                <a href='www' className="btn btn-ghost normal-case text-xl">Purnoboti World</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">

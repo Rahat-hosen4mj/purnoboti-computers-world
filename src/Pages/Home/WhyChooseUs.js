@@ -4,7 +4,7 @@ const WhyChooseUs = () => {
   return (
     <>
       <div className="bg-gray-200 pt-12 pb-3">
-        <h2 className="sm:text-5xl text-5xl  font-medium text-green-400">
+        <h2 className="sm:text-5xl text-5xl text-center font-medium text-green-400">
           Why Choose us
         </h2>
       </div>
@@ -55,25 +55,25 @@ const WhyChooseUs = () => {
             <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">
               2.7K
             </h2>
-            <p class="leading-relaxed">Users</p>
+            <p class="leading-relaxed">Employee</p>
           </div>
           <div class="p-4 sm:w-1/4 w-1/2">
             <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">
-              1.8K
+              100+
             </h2>
-            <p class="leading-relaxed">Subscribes</p>
+            <p class="leading-relaxed">high quality product</p>
           </div>
           <div class="p-4 sm:w-1/4 w-1/2">
             <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">
-              35
+              7.5K
             </h2>
-            <p class="leading-relaxed">Downloads</p>
+            <p class="leading-relaxed">Reviews</p>
           </div>
           <div class="p-4 sm:w-1/4 w-1/2">
             <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">
-              4
+              $100M
             </h2>
-            <p class="leading-relaxed">Products</p>
+            <p class="leading-relaxed">Revenue</p>
           </div>
         </div>
       </div>

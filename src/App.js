@@ -8,6 +8,7 @@ import NotFound from './Pages/Shared/NotFound';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import Signup from './Pages/Login/Signup';
 import RequireAuth from './Pages/Shared/RequireAuth';
+import Purchage from './Pages/Purchage/Purchage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/home' element={<Home />}></Route>
+        <Route path='/purchage' element={<RequireAuth><Purchage /></RequireAuth>}></Route>
         <Route path='/blog' element={<RequireAuth><Blog /></RequireAuth>}></Route>
         <Route path='/portfolio' element={<MyPortfolio />}></Route>
         <Route path='/login' element={<Login />}></Route>
