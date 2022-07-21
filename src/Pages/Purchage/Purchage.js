@@ -3,7 +3,7 @@ import React from 'react';
 const Purchage = () => {
     return (
         <div>
-            <h2>Wellcome to purchage page</h2>
+            <h2 className='text-primary'>Wellcome to purchage page</h2>
         </div>
     );
 };

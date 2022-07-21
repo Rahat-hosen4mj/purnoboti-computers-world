@@ -1,11 +1,18 @@
-import React from 'react';
+import React from "react";
+import PortfolioBanner from "./PortfolioBanner";
+import PortfolioFotter from "./PortfolioFotter";
+import PortfolioHome from "./PortfolioHome";
+import PreviousWork from "./PreviousWork";
 
 const MyPortfolio = () => {
-    return (
-        <div>
-            <h2>Wellcome to portfolio page</h2>
-        </div>
-    );
+  return (
+    <>
+    <PortfolioHome />
+    <PreviousWork />
+      <PortfolioBanner />
+      <PortfolioFotter />
+    </>
+  );
 };
 
 export default MyPortfolio;
