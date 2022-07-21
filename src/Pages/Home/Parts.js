@@ -38,7 +38,7 @@ const Parts = ({part}) => {
                 <span className="title-font font-medium text-2xl text-gray-900">
                 ${price}
                 </span>
-                <button onClick={() =>navigateToPurchage(_id)} className="flex ml-auto text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded">Order</button>
+                <button onClick={() =>navigateToPurchage(_id)} className="flex ml-auto text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded">Purchage</button>
               </div>
             </div>
           </div>
