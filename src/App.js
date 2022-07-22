@@ -13,6 +13,8 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrder from './Pages/Dashboard/MyOrder';
 import MyReview from './Pages/Dashboard/MyReview';
 import MyProfile from './Pages/Dashboard/MyProfile';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -33,7 +35,7 @@ function App() {
         <Route path='/signup' element={<Signup />}></Route>
         <Route path='*' element={<NotFound />}></Route>
       </Routes>
-     
+      <ToastContainer />
     </div>
   );
 }

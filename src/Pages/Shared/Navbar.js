@@ -68,7 +68,7 @@ const Navbar = () => {
             {navItem}
           </ul>
         </div>
-        <a href="www" className="btn btn-ghost normal-case text-xl">
+        <a href="/" className="btn btn-ghost normal-case text-xl">
           Purnoboti World
         </a>
       </div>
