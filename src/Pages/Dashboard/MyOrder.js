@@ -1,4 +1,5 @@
 
+import { signInWithPhoneNumber } from 'firebase/auth';
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -9,11 +10,24 @@ import auth from '../../firebase.init';
 const MyOrder = () => {
     const [user] = useAuthState(auth);
     const [orders, setOrders] = useState([])
+    const navigate = useNavigate()
 
     useEffect(() =>{
         if(user){
-            fetch(`http://localhost:5000/order`)
-            .then(res => res.json())
+            fetch(`http://localhost:5000/order?buyer=${user.email}`,{
+                method: 'GET',
+                headers:{
+                    'authorization': `Bearar ${localStorage.getItem('accessToken')}`
+                }
+            } )
+            .then(res => {
+                if (res.status === 401 || res.status === 403) {
+                    signInWithPhoneNumber(auth);
+                    localStorage.removeItem('accessToken');
+                    navigate('/');
+                }
+                return res.json()
+            })
             .then(data => setOrders(data))
         }
     },[user])
@@ -38,7 +52,7 @@ const MyOrder = () => {
                             <td>{order.buyerName}</td>
                             <td>{order.product}</td>
                             
-                            <td>{order.price}</td>
+                            <td>${order.price}</td>
                         </tr>)
                     }
                     
