@@ -15,7 +15,7 @@ const Purchage = () => {
   const handleOrder = () => {
     const order = {
       orderId: _id,
-      order: name,
+      product: name,
       price: price,
       buyer: user.email,
       buyerName: user.displayName,
