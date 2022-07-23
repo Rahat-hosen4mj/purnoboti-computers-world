@@ -33,8 +33,6 @@ const Purchage = () => {
           toast(`Successfully you order ${name}`);
           navigate('/');
       }
-     
-     
       });
     console.log('hanlde purchage click successfully', user)
   };
