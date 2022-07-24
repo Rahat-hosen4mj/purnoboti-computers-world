@@ -10,11 +10,53 @@ const AddProduct = () => {
         reset
       } = useForm();
 
-      const onSubmit = async (data) => {
-        console.log(data)
-        reset()
-      };
+      const imageStorageKey = '809333cd2653b2fe985b53469c60e38c' 
 
+      const onSubmit = async (data) => {
+        const image = data.image[0];
+        const formData = new FormData();
+        formData.append('image', image);
+        const url = `https://api.imgbb.com/1/upload?key=${imageStorageKey}`;
+        fetch(url, {
+            method: 'POST',
+            body: formData
+        })
+        .then(res=>res.json())
+        .then(result =>{
+          if(result.success){
+            const img = result.data.url;
+            const part = {
+                
+                name: data.name,
+                description: data.description,
+                price: data.price,
+                avlQuantity: data.quantity,
+                minOrder: data.minQuantity,
+                img: img
+            }
+            // send to your database 
+            fetch('http://localhost:5000/part', {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json',
+                    authorization: `Bearer ${localStorage.getItem('accessToken')}`
+                },
+                body: JSON.stringify(part)
+            })
+            .then(res =>res.json())
+            .then(inserted =>{
+              if(inserted.insertedId){
+                  toast.success('part added successfully')
+                  reset();
+              }
+              else{
+                  toast.error('Failed to add the part');
+              }
+          })
+    
+      }
+        })
+      };
 
     return (
         <div className="pl-48">
