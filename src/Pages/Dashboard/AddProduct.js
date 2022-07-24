@@ -60,7 +60,7 @@ const AddProduct = () => {
 
     return (
         <div className="pl-48">
-      <h2 className="text-3xl text-lime-400 py-4">ADD Doctor page</h2>
+      <h2 className="text-3xl text-lime-400 py-4">ADD part in the database</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-control w-full max-w-xs">
           <input

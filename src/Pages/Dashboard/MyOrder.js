@@ -43,6 +43,7 @@ const MyOrder = () => {
                         <th>Buyer</th>
                         <th>Product</th>
                         <th>Price <small>(per piece)</small> </th>
+                        <th>Action </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -53,6 +54,9 @@ const MyOrder = () => {
                             <td>{order.product}</td>
                             
                             <td>${order.price}</td>
+                            <td>
+                            <button class="btn btn-xs btn-error">Paid</button>
+                            </td>
                         </tr>)
                     }
                     
