@@ -20,7 +20,7 @@ const Purchage = () => {
       buyer: user.email,
       buyerName: user.displayName,
     };
-    fetch("http://localhost:5000/order", {
+    fetch("https://rocky-earth-79278.herokuapp.com/order", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -4,7 +4,7 @@ const usePurchage = (purchage) =>{
     const [part, setPart] = useState({});
 
     useEffect( () =>{
-      fetch(`http://localhost:5000/part/${purchage}`)
+      fetch(`https://rocky-earth-79278.herokuapp.com/part/${purchage}`)
       .then(res => res.json())
       .then(data => setPart(data))
     },[purchage])

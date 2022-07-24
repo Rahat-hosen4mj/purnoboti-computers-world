@@ -14,7 +14,7 @@ const MyOrder = () => {
 
     useEffect(() =>{
         if(user){
-            fetch(`http://localhost:5000/order?buyer=${user.email}`,{
+            fetch(`https://rocky-earth-79278.herokuapp.com/order?buyer=${user.email}`,{
                 method: 'GET',
                 headers:{
                     'authorization': `Bearar ${localStorage.getItem('accessToken')}`
