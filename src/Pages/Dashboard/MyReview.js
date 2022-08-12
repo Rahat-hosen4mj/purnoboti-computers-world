@@ -1,35 +1,35 @@
 import React from "react";
 import { toast } from "react-toastify";
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const MyReview = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const handleBooking = (event) => {
     event.preventDefault();
     const name = event.target.name.value;
     const rating = event.target.rating.value;
     const mgs = event.target.review.value;
     const review = {
-        name: name,
-        rating: rating,
-        mgs: mgs,
-      };
-      fetch("https://rocky-earth-79278.herokuapp.com/review", {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(review),
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          if(data){
-            toast(`Successfully add your review ${name}`);
-            navigate('/');
+      name: name,
+      rating: rating,
+      mgs: mgs,
+    };
+    fetch("https://rocky-earth-79278.herokuapp.com/review", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(review),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data) {
+          toast(`Successfully add your review ${name}`);
+          navigate("/");
         }
-        });
+      });
     console.log("handle btn cliced kora hoice", name, rating, mgs);
-    event.target.reset()
+    event.target.reset();
   };
   return (
     <div>

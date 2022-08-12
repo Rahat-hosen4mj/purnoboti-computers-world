@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import useParts from "../../hooks/useParts";
 import DeleteConfirmModal from "./DeleteConfirmModal";
 import { useQuery } from "react-query";
 import Loading from "../Shared/Loading";

@@ -2,10 +2,10 @@
 Click here for live site link [https://purnoboti-computers-world.web.app/](https://purnoboti-computers-world.web.app/)
 
 ## server side code link
-Click here for code link [https://github.com/programming-hero-web-course1/manufacturer-website-server-side-Rahat-hosen4mj](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-Rahat-hosen4mj).
+Click here for code link [https://github.com/Rahat-hosen4mj/computers-world-server](https://github.com/Rahat-hosen4mj/computers-world-server).
 
-## clinet site code link
-Click here for live site link [https://github.com/programming-hero-web-course1/manufacturer-website-client-side-Rahat-hosen4mj](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-Rahat-hosen4mj?fbclid=IwAR0mRi-KivH6vEemZRdM8L_3i2c0Yybc6PSeVM-lyslbPY0USvSLzrsp5Ww)
+## client site code link
+Click here for live site link [https://github.com/Rahat-hosen4mj/purnoboti-computers-world](https://github.com/Rahat-hosen4mj/purnoboti-computers-world)
 
 ## technologies (frameworks, libraries) 
 * react router
