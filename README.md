@@ -23,3 +23,5 @@ Click here for live site link [https://github.com/Rahat-hosen4mj/purnoboti-compu
 * add and delete part in database
 * meaningfull component name
 * destructure
+* you can show admin panel when you log in with 
+* (email: nusrat@gmail.com || munnu@gmail.com Pass: 123456)

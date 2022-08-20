@@ -6,7 +6,7 @@ import Loading from "../Shared/Loading";
 
 const ManageProduct = () => {
   const [deletingPart, setDeletingPart] = useState(null);
-  const { data: parts, isLoading, refetch } = useQuery('parts', () => fetch('https://rocky-earth-79278.herokuapp.com/part', {
+  const { data: parts, isLoading, refetch } = useQuery('parts', () => fetch('http://localhost:5000/part', {
     headers: {
         authorization: `Bearer ${localStorage.getItem('accessToken')}`
     }
